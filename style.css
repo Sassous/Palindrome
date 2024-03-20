@@ -1,0 +1,91 @@
+:root {
+    /* colors */
+    --grey: #dfdfe2;
+    --white: #ffffff;
+    --light-purple: #ad96b5;
+    --dark-purple: #463b4f;
+    --middle-purple: #aa8ab5;
+    --yellow: #ffd44d;
+    --blue: #7cdaff;;
+    --light-pink: #ffadad;
+  --light-green: #acd157;
+  
+    /* font sizes */
+    --root-font-size: 16px;
+    font-size: var(--root-font-size);
+  
+    /* font-families */
+    --font-headline: "Libre Bodoni", serif;
+    --font-family: "Playfair", serif;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--light-purple);
+    color: var(--grey);
+    font-family: var(--font-family);
+  }
+  h1{
+    font-size: 3em;
+    color: var(--white);
+    font-family: var(--font-headline);
+    margin: 50px 0 0 0;
+  }
+  span{
+    color: var(--dark-purple);
+    padding-top: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  .input{
+    flex-direction: row;
+  }
+  #text-input:hover{
+    cursor: pointer;
+    border-bottom:2px solid var(--middle-purple) !important;
+  }
+  #text-input{
+    border: none;
+    border-bottom: 2px solid var(--blue) !important;
+  }
+  button{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    font-family: var(--font-family);
+    border: none;
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: var(--middle-purple);
+  }
+  #result{
+    color: var(--dark-purple);
+    font-weight: 700;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .box{
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+    width: 30%;
+    text-align: center;
+  }
+  .check-box{
+    background-color: var(--white);
+    box-shadow: 0px 10px 6px 0px var(--dark-purple);
+  }
+  .info{
+    background-color: var(--dark-purple);
+  }
